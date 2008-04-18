@@ -1,4 +1,3 @@
-# $Id: PKGBUILD,v 1.3 2008/04/02 10:06:21 thomas Exp $
 # Maintainer: Thomas Baechler <thomas@archlinux.org>
 
 pkgname=libfprint
