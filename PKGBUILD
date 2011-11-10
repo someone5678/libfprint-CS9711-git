@@ -1,4 +1,5 @@
-# Maintainer: Thomas Baechler <thomas@archlinux.org>
+# Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
+# Contributor: Thomas Baechler <thomas@archlinux.org>
 
 pkgname=libfprint
 pkgver=0.4.0
