@@ -2,8 +2,8 @@
 # Contributor: Tom Gundersen <teg@jklm.no>
 # Contributor: Thomas Baechler <thomas@archlinux.org>
 
-pkgname=libfprint
-pkgver=1.94.8
+pkgname=libfprint-CS9711-git
+pkgver=1.94.7
 pkgrel=1
 pkgdesc="Library for fingerprint readers"
 url="https://fprint.freedesktop.org/"
@@ -32,7 +32,8 @@ checkdepends=(
   cairo
   umockdev
 )
-provides=(libfprint-2.so)
+provides=(libfprint libfprint-2.so)
+conflicts=(libfprint)
 groups=(fprint)
 source=("git+https://github.com/someone5678/libfprint")
 b2sums=('SKIP')
@@ -41,7 +42,7 @@ validpgpkeys=(
 )
 
 prepare() {
-  cd $pkgname
+  cd libfprint
 }
 
 build() {
@@ -52,7 +53,7 @@ build() {
     -D installed-tests=false
   )
 
-  arch-meson $pkgname build "${meson_options[@]}"
+  arch-meson libfprint build "${meson_options[@]}"
   meson compile -C build
 }
 
