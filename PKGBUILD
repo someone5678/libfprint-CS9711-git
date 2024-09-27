@@ -34,7 +34,7 @@ checkdepends=(
 )
 provides=(libfprint-2.so)
 groups=(fprint)
-source=("git+https://github.com/someone5678/libfprint/tree/v$pkgver")
+source=("git+https://github.com/someone5678/libfprint")
 b2sums=('SKIP')
 validpgpkeys=(
   D4C501DA48EB797A081750939449C2F50996635F # Marco Trevisan (Treviño) <mail@3v1n0.net>
